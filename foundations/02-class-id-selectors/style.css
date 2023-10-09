@@ -1,4 +1,9 @@
 .paras {
-    background-color: pink;
+    background-color: #ffc0cb;
     font-family: Verdana, 'DejaVu Sans', sans-serif;
+}
+
+#diva1 {
+    font-size: 36px;
+    color: #0000ff;
 }
