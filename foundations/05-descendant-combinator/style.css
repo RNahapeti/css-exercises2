@@ -1,0 +1,34 @@
+div p {
+    background-color: yellow;
+}
+
+/* OR
+
+div {
+    & p {
+        background-color: yellow;
+    }
+}
+
+OR
+
+.container .text {
+    background-color: yellow;
+}
+
+OR
+
+.container {
+    .text {
+        background-color: yellow;
+    }
+}
+
+OR
+
+.container {
+    & .text {
+        background-color: yellow;
+    }
+}
+*/
