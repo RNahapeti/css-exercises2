@@ -3,6 +3,8 @@
   background: papayawhip;
   display: flex; /* Changed to flex layout */
   justify-content: space-between; /* Position nav links and logo to the desired position */
+  align-items: center; /* Vertically centered nav bar items */
+  padding: .8em; /* Added padding around header */
 }
 
 .logo {
@@ -11,8 +13,6 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
-  display: flex;
-  align-items: center; /* Center logo vertically */
 }
 
 ul {
@@ -20,6 +20,7 @@ ul {
   list-style-type: none;
   display: flex; /* Changed to flex layout */
   gap: 1em; /* Added spacing between nav links */
+  padding: 0; /* Removed ul default padding; */
 }
 
 a {
