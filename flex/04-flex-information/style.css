@@ -11,6 +11,8 @@ img {
   font-size: 36px;
   font-weight: 900;
   flex-basis: 100%; /* cause title to remain on its own row */
+  margin-bottom: -20px; /* remove some space from flex gap to meet 32px requirement - only necessary because I included the title as part of the flex items */
+  text-align: center; /* center align the title text */
 }
 
 /* do not edit this footer */
@@ -35,4 +37,5 @@ img {
 
 .card {
   flex: 0 1 200px; /* set info card flex properties */
+  text-align: center; /* center align the images and text in title cards */
 }
