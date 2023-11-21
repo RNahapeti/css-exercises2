@@ -1,6 +1,8 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex; /* Changed to flex layout */
+  justify-content: space-between; /* Position nav links and logo to the desired position */
 }
 
 .logo {
@@ -9,11 +11,15 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  display: flex;
+  align-items: center; /* Center logo vertically */
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex; /* Changed to flex layout */
+  gap: 1em; /* Added spacing between nav links */
 }
 
 a {
