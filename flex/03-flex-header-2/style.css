@@ -12,6 +12,10 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex; /* Create flex container */
+  align-items: center; /* Vertically center nav bar items */
+  padding: 8px; /* Add requested padding */
+  gap: 16px; /* Add 16 spacing between nav items */
 }
 
 .profile-image {
@@ -45,4 +49,8 @@ a {
 
 ul {
   list-style-type: none;
+  display: flex; /* Convert ul to flex layout */
+  padding: 0; /* remove default ul padding */
+  margin-right: auto; /* Position button and profile image to the right WITHOUT having to touch HTML */
+  gap: 16px; /* Add requested 16px gap between nav items */
 }
