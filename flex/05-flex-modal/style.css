@@ -22,6 +22,7 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
   display: flex; /* create flex container */
   gap: 1em; /* add spacing between icon and rest of content */
+  padding: 1em; /* add padding for modal box */
 }
 
 .icon {
@@ -75,4 +76,14 @@ button.cancel {
   display: flex; /* create flex container for heading */
   align-items: center; /* vertically center flex items */
   justify-content: space-between; /* horizontally align items to opposite ends of container */
+}
+
+.header {
+  font-weight: bold; /* style head text to desired outcome */
+  font-size: 20px;
+}
+
+.titleBox,
+.text {
+  margin-bottom: 1em; /* add vertical space between header, text content, and buttons */
 }
