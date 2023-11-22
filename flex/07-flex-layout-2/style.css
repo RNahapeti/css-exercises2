@@ -27,14 +27,23 @@ body {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  flex-shrink: 0; /* block ability for sidebar to shrink */
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  flex: 0 1 300px; /* don't allow cards to grow past flex-basis of 300px, but allow them to shrink when necessary */
 }
 
 .page {
   flex: 1; /* grow the main page section so footer gets pushed to bottom of page */
+  display: flex; /* set page to flex layout in order to position sidebar and main content appropriately */
+}
+
+.main {
+  display: flex; /* create flex container for "cards" */
+  flex-wrap: wrap; /* allow cards to wrap */
+  gap: 20px; /* add spacing between cards */
 }
