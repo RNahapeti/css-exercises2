@@ -20,6 +20,8 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex; /* create flex container */
+  gap: 1em; /* add spacing between icon and rest of content */
 }
 
 .icon {
@@ -33,6 +35,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0; /* stops icon from shrinking and distorting circular background color/padding */
 }
 
 .close-button {
@@ -66,4 +69,10 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.titleBox {
+  display: flex; /* create flex container for heading */
+  align-items: center; /* vertically center flex items */
+  justify-content: space-between; /* horizontally align items to opposite ends of container */
 }
