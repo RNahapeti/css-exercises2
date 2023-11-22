@@ -5,6 +5,9 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex; /* create flex container */
+  flex-direction: column; /* change flex item direction to columns */
+  justify-content: space-between; /* push header and footer to top and bottom of page while leaving content centered in the middle */
 }
 
 img {
@@ -24,4 +27,30 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+ul {
+  list-style: none ; /* remove list bullets from links */
+  margin: 0; /* remove default ul margins */
+  padding: 0; /* remove default ul padding */
+  display: flex; /* create flex container */
+  gap: 1em; /* add spacing between nav links */
+
+  & a {
+    text-decoration: none; /* remove hyperlink underline */
+    color: #3a3a3a; /* change hyperlink text color */
+  }
+}
+
+.rightAlign {
+  margin-left: auto; /* align right two nav links in header and footer to the right */
+}
+
+.header,
+.footer {
+  padding: 1em; /* add required padding to header and footer */
+}
+
+.footer {
+  background-color: #eeeeee; /* add footer background color */
 }
