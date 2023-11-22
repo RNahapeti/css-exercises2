@@ -10,6 +10,9 @@ body {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-size: 32px; /* set header font size */
+  font-weight: 900; /* set font weight */
+  padding-left: 16px; /* move title text over from edge of screen */
   display: flex; /* turn header into flex container in order to vertically center site title */
   align-items: center; /* vertically center title */
 }
@@ -28,6 +31,7 @@ body {
   background: royalblue;
   box-sizing: border-box;
   flex-shrink: 0; /* block ability for sidebar to shrink */
+  padding: 16px; /* add padding to sidebar */
 }
 
 .card {
@@ -35,6 +39,7 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
   flex: 0 1 300px; /* don't allow cards to grow past flex-basis of 300px, but allow them to shrink when necessary */
+  padding: 16px; /* add padding to card content */
 }
 
 .page {
@@ -46,4 +51,21 @@ body {
   display: flex; /* create flex container for "cards" */
   flex-wrap: wrap; /* allow cards to wrap */
   gap: 20px; /* add spacing between cards */
+  padding: 32px; /* add padding around cards section */
+}
+
+ul {
+  font-size: 24px; /* set font size of links */
+  list-style: none; /* remove link bullets */
+  padding: 0; /* remove default ul padding */
+  margin: 0; /* remove default ul margin */
+
+  & a {
+    text-decoration: none; /* remove underline from sidebar nav links */
+    color: white; /* set sidebar nav link color */
+  }
+
+  & li {
+    margin-bottom: 18px; /* add spacing between sidebar links */
+  }
 }
