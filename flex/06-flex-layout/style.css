@@ -54,3 +54,14 @@ ul {
 .footer {
   background-color: #eeeeee; /* add footer background color */
 }
+
+.content {
+  display: flex; /* create flex container */
+  flex-direction: column; /* position flex items into column */
+  align-items: center; /* horizontally center align .content flex items */
+  gap: 5px; /* visually there was already space between the content items, but added slight more space due to assignment requirement */
+}
+
+button {
+  padding: 8px 16px; /* add button padding */
+}
